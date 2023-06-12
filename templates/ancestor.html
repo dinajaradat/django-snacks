@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Home</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="bg-gray-800 text-white py-4  items-center">
+            <a href="{% url 'home' %}" style="padding: 0.5rem 1rem; color: #f5f0f0; text-decoration: none;">Home</a>
+            <a href="{% url 'about' %}" style="padding: 0.5rem 1rem; color: #f5f0f0; text-decoration: none;">About</a>
+        </nav>
+    </header>
+    <main>
+        {% block content%}
+        {% endblock content%}
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>
